@@ -46,7 +46,7 @@ app.post('/musicians/:musicianId/instruments', async (req, res, next) => {
     })
     
     await musician.addInstruments(instruments)
-    res.json({ message: `Associated Adam with instruments ${instrumentIds}.`})
+    res.json({ message: `Associated ${musician.firstName} with instruments ${instrumentIds}.`})
 })
 
 
